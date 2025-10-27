@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigneshwaran A | Home</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/v_ogo.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Animated Shapes -->
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Gradient: orange to blue -->
+                        <linearGradient id="vickyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                        </linearGradient>
+
+                        <!-- Glow effect -->
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Thunderbolt background -->
+                    <path d="M36 4 L20 36 H32 L28 60 L48 28 H36 Z" fill="url(#vickyGradient)" opacity="0.5"
+                        filter="url(#glow)" />
+
+                    <!-- Bold 'V' in front -->
+                    <path d="M18 20 L32 52 L46 20" stroke="url(#vickyGradient)" stroke-width="5" stroke-linecap="round"
+                        stroke-linejoin="round" fill="none" filter="url(#glow)" />
+
+                </svg>
+
+
+                <span class="logo-text">Vigneshwaran A</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-rotator">
+                <div class="text-set active">
+                    <h1 class="glitch-text" data-text="FUTURE IS NOW">FUTURE BEGINS WITH CODE</h1>
+                    <p class="subtitle">Hi, I'm Vignesh.Software Developer with a passion for creating smart, scalable, and creative solutions.</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="BEYOND LIMITS">Code. Create. Connect.</h1>
+                    <p class="subtitle">Exploring the future through innovation and imagination.</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="ELECTRIC DREAMS">Code into Creativity.</h1>
+                    <p class="subtitle">A developer on a mission to shape the digital world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#features" class="cta-button cta-primary">Get Started</a>
+            <a href="#about" class="cta-button cta-secondary">View Projects</a>
+        </div>
+    </section>
+
+    <!-- Features Section with Tabs -->
+    <section class="features" id="features">
+        <h2 class="section-title">Core Features</h2>
+        <div class="features-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="performance">
+                    <span class="tab-icon">⚡</span>
+                    <span>Skills & Expertise</span>
+                </div>
+                <div class="tab-item" data-tab="security">
+                    <span class="tab-icon">🔒</span>
+                    <span>Projects</span>
+                </div>
+                <div class="tab-item" data-tab="network">
+                    <span class="tab-icon">🌐</span>
+                    <span>Interests & Passions</span>
+                </div>
+                <div class="tab-item" data-tab="analytics">
+                    <span class="tab-icon">📊</span>
+                    <span>My Vision</span>
+                </div>
+                <div class="tab-item" data-tab="integration">
+                    <span class="tab-icon">🔧</span>
+                    <span>Upcoming Projects</span>
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="content-panel active" id="performance">
+                    <h3>Technical Skills & Soft Skills</h3>
+                    <p>Web Development (HTML, CSS, JavaScript, React, Node.js), <br> Database Management (MySQL,
+                        Firebase, MongoDB) <br> Cloud Platforms (AWS, Azure, Google Cloud) <br> Version Control (Git,
+                        GitHub)</p>
+                    <ul class="feature-list">
+                        <li>Problem Solving & Critical Thinking</li>
+                        <li>Time Management & Responsibility</li>
+                        <li>Team Collaboration & Communication</li>
+                        <!-- <li>Real-time data synchronization</li> -->
+                    </ul>
+                </div>
+
+                <div class="content-panel" id="security">
+                    <h3>Projects</h3>
+                    <!-- <p>Plece Your Project Discription</p> -->
+                    <ul class="feature-list">
+                        <li>E-Commerce Web Platform - All Futures</li>
+                        <li>NextGen Portfolio Website - Office</li>
+                        <li>Realestate Full Stack Website</li>
+                        <li>Real-time threat detection Using AI</li>
+                        <li>Automated security updates </li>
+                        <li>Resume Maker - Office </li>
+                        <li>CRM Softwares and Invoice</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="network">
+                    <h3>Interests & Passions</h3>
+                    <p>A curiosity or intellectual attraction toward a subject, topic, or activity.</p>
+                    <ul class="feature-list">
+                        <li>💻 Exploring new web and mobile frameworks</li>
+                        <li>⚙️ Experimenting with IoT devices and AI tools</li>
+                        <li>🏏 Playing and following sports</li>
+                        <li>🎨 Designing futuristic interfaces</li>
+                        <li>📚 Learning emerging tech trends & open-source contribution</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="analytics">
+                    <h3>My Vision</h3>
+                    <p>To build intelligent and connected digital ecosystems that bridge the gap between people and
+                        technology.
+                        <br>
+                        <br>
+                        My goal is to deliver
+                    </p>
+                    <ul class="feature-list">
+                        <li>innovative,</li>
+                        <li>reliable,</li>
+                        <li>human-centered solutions</li>
+
+                    </ul>
+                    <p>— one line of code at a time.</p>
+                </div>
+                <div class="content-panel" id="integration">
+                    <h3>Upcoming Projects</h3>
+                    <p>"The feature incorporates interactive aerial views and floor plans of upcoming project sites"</p>
+                    <ul class="feature-list">
+                        <li>IoT Smart Home System: <br> AI-powered home automation for comfort and energy efficiency.
+                        </li>
+                        <li>Sports Analytics Dashboard: <br>Real-time sports data visualization for coaches and players.
+                        </li>
+                        <li>Personal AI Assistant: <br> Custom voice assistant trained for productivity and coding help.
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Vigneshwaran</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Innovation Starts Here</h2>
+                <p>Hi, I'm Vignesh — a Software Developer and technology enthusiast passionate about innovation, sports,
+                    and smart systems.</p>
+                <p>I love building projects that mix art, code, and intelligence — from real-time IoT devices to
+                    responsive apps and futuristic web designs.</p>
+                <p>I'm not just a developer — I'm a lifelong learner, a team player, and a sports lover who believes in
+                    discipline, focus, and never giving up — both in code and in life.</p>
+                <q>Technology is my playground, and innovation is my game.</q>
+            </div>
+            <div class="about-visual">
+                <div class="about-graphic"></div>
+            </div>
+        </div>
+
+        <!-- Second row with reversed layout -->
+        <div class="about-content" style="margin-top: 80px;">
+            <div class="about-visual">
+                <div class="about-graphic-alt">
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Turning ideas into digital experiences</h2>
+                <p>Hi, I'm Vignesh — a passionate Software Developer with an M.Sc. in Computer Science and over 2 years
+                    of experience turning ideas into digital realities.</p>
+                <p>I specialize in IoT, Web, and App Development, crafting modern solutions that blend innovation,
+                    performance, and creativity.</p>
+                <p>I believe technology isn't just about machines — it's about people, possibilities, and progress.
+                    My goal is to create smarter systems, beautiful apps, and interactive web experiences that inspire
+                    and empower.</p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Connect With Us</h3>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-details">
+                        <h4>Email</h4>
+                        <p>anbuvicky2020@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-details">
+                        <h4>Phone</h4>
+                        <p>+91 97862 06210</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Location</h4>
+                        <p>Thanjavur, 613001</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Interactive Map</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.684836923555!2d79.1318679!3d10.782972749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89f48fe1221%3A0x1d23cb40e55d84d6!2sBrihadeeswara%20Temple!5e0!3m2!1sen!2sin!4v1761558462105!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                    </div>
+                    <div class="map-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <!-- <a href="#careers">Careers</a> -->
+            </div>
+            <p class="copyright">© 2025 PORTFOLIO. All rights reserved.| Design: Vigneshwaran A</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
